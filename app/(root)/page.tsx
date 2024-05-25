@@ -55,7 +55,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
           data={books?.data}
           emptyTitle="No books Found"
           emptyStateSubtext="Come back later"
-          collectionType="All_books"
+          
           limit={6}
           page={page}
           totalPages={books?.totalPages}

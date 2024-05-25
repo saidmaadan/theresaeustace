@@ -1,7 +1,8 @@
 import { IBook } from '@/lib/database/models/book.model'
 import React from 'react'
-import Card from './Card'
+
 import Pagination from './Pagination'
+import Card from './Card'
 
 
 type CollectionProps = {
