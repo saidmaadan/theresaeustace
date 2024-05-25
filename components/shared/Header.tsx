@@ -9,7 +9,7 @@ import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="fixed top-0 left-0 right-0 mb-20 bg-white w-full border-b-2 border-gray-200 z-100">
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-auto">
           <span className="flex-center space-x-2"><BookOpen className="text-green-700 size={64}" /><span className="p-bold-20 ">Theresa Eustace</span></span>
@@ -23,8 +23,11 @@ const Header = () => {
         </SignedIn>
         
 
-        <div className="flex w-32 justify-end gap-3">
-        
+        <div className="flex items-center w-auto justify-end gap-3">
+        <Link href="/about" className="w-auto">
+          About
+          
+        </Link>
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
             <MobileNav />
